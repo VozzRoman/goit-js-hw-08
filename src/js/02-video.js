@@ -18,7 +18,7 @@ function timeLine(data) {
 
 function storage() {
 	if (!localStorage.getItem(STORAGE_KEY)) {
-		player.setCurrentTime(0);
+		player.setCurrentTime(0); // еще можно return;
 	} else {
 		player.setCurrentTime(localStorage.getItem(STORAGE_KEY));
 	}
